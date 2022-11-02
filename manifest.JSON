@@ -7,7 +7,7 @@
         "128": "round-table.png" 
     },
     "background": {
-        "scripts": ["event.js"],
+        "scripts": ["event.js", "deepai.min.js"],
         "persistent": false
     },
     "page_action": {
@@ -19,6 +19,7 @@
           "js":["jquery.min.js","content.js"]
         }
     ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
       "permissions":[
         "tabs","https://meet.google.com/*","storage","notifications", "activeTab"
     ]
